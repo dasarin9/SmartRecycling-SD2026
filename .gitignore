@@ -1,1 +1,27 @@
+# Python Environments & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
 
+# PyTorch, ExecuTorch & ML Model Weights
+*.pt
+*.pth
+*.pte
+*.gguf
+*.onnx
+*.bin
+
+# Datasets & Media (Keep raw data local)
+data/
+datasets/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
