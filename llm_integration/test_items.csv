@@ -1,0 +1,21 @@
+item,expected_bin
+PET Plastic Water Bottle,Recycling
+Aluminum Soda Can,Recycling
+Clean Cardboard Box,Recycling
+Glass Pasta Sauce Jar,Recycling
+Office Paper,Recycling
+Tin Soup Can,Recycling
+HDPE Milk Jug,Recycling
+Banana Peel,Compost
+Coffee Grounds,Compost
+Apple Core,Compost
+Eggshells,Compost
+Dry Leaves,Compost
+Bread Crusts,Compost
+Greasy Pizza Box,Landfill
+Styrofoam Takeout Container,Landfill
+Chip Bag,Landfill
+Used Paper Napkin,Landfill
+Broken Ceramic Mug,Landfill
+Plastic Grocery Bag,Landfill
+Disposable Diaper,Landfill
