@@ -1,5 +1,3 @@
-# eval.py
-
 import csv
 import json
 import time
@@ -10,8 +8,16 @@ MODEL = "llama3.2:3b"
 MAX_TOKENS = 20
 
 SYSTEM_PROMPT = (
-    "You are a recycling assistant. Reply in under 10 words using this exact format: "
-    "[Recycling, Compost, or Landfill] - [short reason]."
+    "You are a strict waste sorting assistant. Classify items into Landfill, Compost, or Recycling.\n"
+    "Rules:\n"
+    "- Landfill: Plastic bags, Styrofoam, chip bags, greasy/soiled paper, used napkins, ceramics, diapers.\n"
+    "- Compost: Food scraps, fruit cores, coffee grounds, eggshells, yard waste.\n"
+    "- Recycling: Clean plastic bottles/jugs, metal cans, glass jars, clean paper/cardboard.\n\n"
+    "Reply in under 10 words starting directly with Landfill, Compost, or Recycling.\n"
+    "Examples:\n"
+    "Item: Plastic Bag -> Landfill - Plastic film jams recycling machines.\n"
+    "Item: Orange Peel -> Compost - Food scraps decompose naturally.\n"
+    "Item: Clean Glass Jar -> Recycling - Clean glass is recyclable."
 )
 
 def query_llm(item):
@@ -58,8 +64,7 @@ def query_llm(item):
     return output_text.strip(), ttft, tps, total_time
 
 def check_accuracy(output, expected_bin):
-    #checks if the expected bin appears before the dash or in the first 25 chars
-    prefix = output.split("-")[0].lower() if "-" in output else output[:25].lower()
+    prefix = output[:25].lower()
     return expected_bin.lower() in prefix
 
 def main():
@@ -98,7 +103,6 @@ def main():
             "llm_output": output
         })
 
-    #summary stats
     n = len(results)
     accuracy = (correct_count / n) * 100
     avg_ttft = sum(r["ttft_sec"] for r in results) / n

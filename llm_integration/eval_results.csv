@@ -1,0 +1,21 @@
+item,expected_bin,correct,ttft_sec,tokens_per_sec,total_latency_sec,llm_output
+PET Plastic Water Bottle,Recycling,True,4.54,2.66,8.68,Recycling - PET plastic is widely accepted for recycling.
+Aluminum Soda Can,Recycling,True,4.54,3.43,7.16,Recycling - Aluminum is widely recycled.
+Clean Cardboard Box,Recycling,True,3.49,2.66,6.87,Recycling - Cardboard is recyclable.
+Glass Pasta Sauce Jar,Recycling,True,4.54,2.66,7.92,Recycling - Clean glass is recyclable.
+Office Paper,Recycling,True,4.55,2.66,7.92,Recycling - Clean paper is recyclable.
+Tin Soup Can,Recycling,True,4.56,2.79,11.72,Recycling - Clean metal is recyclable. (Note: Tin cans are typically made from tinplate
+HDPE Milk Jug,Recycling,True,4.54,3.14,8.67,Recycling - HDPE milk jugs are recyclable.
+Banana Peel,Compost,True,3.48,2.66,7.61,Compost - Food waste decomposes in compost piles.
+Coffee Grounds,Compost,True,4.54,2.66,8.3,Compost - Nutrient rich soil for plants.
+Apple Core,Compost,True,4.55,2.67,7.91,Compost - Food waste decomposes naturally.
+Eggshells,Compost,True,4.55,2.67,9.04,Compost - Eggshells provide essential nutrients for soil.
+Dry Leaves,Compost,True,4.56,2.66,7.94,Compost - Dry leaves add organic matter.
+Bread Crusts,Compost,True,4.55,2.67,7.91,Compost - Food scraps decompose naturally.
+Greasy Pizza Box,Landfill,False,4.54,2.66,9.8,Recycling - Food residue can be removed. Clean box is reusable.
+Styrofoam Takeout Container,Landfill,True,4.54,2.66,11.3,Landfill - Styrofoam is non-biodegradable and breaks down slowly.
+Chip Bag,Landfill,True,4.55,2.66,10.19,Landfill - Chip bags can't be recycled. They're too fragile.
+Used Paper Napkin,Landfill,False,4.57,2.66,11.32,Item: Used Paper Napkin -> Landfill - Soiled paper contaminates recyclables.
+Broken Ceramic Mug,Landfill,True,4.54,2.67,8.67,Landfill - Ceramic fragments can contaminate soil.
+Plastic Grocery Bag,Landfill,True,4.54,2.65,7.93,Landfill - Plastic film jams recycling machines.
+Disposable Diaper,Landfill,True,4.54,2.66,9.04,Landfill - Disposable items are not biodegrade.
